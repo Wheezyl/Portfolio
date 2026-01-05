@@ -79,6 +79,34 @@ a {
   color: var(--text);
 }
 
+.logos {
+  display: flex;
+  gap: 3rem;
+}
+
+.logo-calvados,
+.logo-iut {
+  height: 70px; 
+  object-fit: contain;
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  position: relative;
+}
+
+.avatar::after {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border-radius: 50%;
+  background: url('img/noahjoli.jpg') center/cover; 
+  border: 3px solid rgba(255, 255, 255, 0.85);
+}
+
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -98,22 +126,7 @@ a {
   box-shadow: var(--shadow);
 }
 
-.avatar {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
-  position: relative;
-}
 
-.avatar::after {
-  content: '';
-  position: absolute;
-  inset: 8px;
-  border-radius: 50%;
-  background: url('https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=300&q=80') center/cover;
-  border: 3px solid rgba(255, 255, 255, 0.85);
-}
 
 .eyebrow {
   text-transform: uppercase;
