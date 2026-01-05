@@ -445,16 +445,7 @@ a {
   color: var(--muted);
 }
 
-.contact-form {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  background: var(--card-bg);
-  padding: 2.5rem;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-}
+
 
 .form-row {
   display: flex;
@@ -559,9 +550,6 @@ textarea:focus {
     padding: 2.5rem 1.25rem 3.5rem;
   }
 
-  .contact-form {
-    padding: 1.8rem;
-  }
 
   .mission-card header {
     flex-direction: column;
