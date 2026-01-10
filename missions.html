@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Missions - Portfolio Alternance Noah Joli</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero sub-hero">
+    <nav class="navbar">
+      <div class="logo">Noah Joli</div>
+      <div class="logos">
+        <img src="img/calvados_logo.png" alt="Logo Calvados" class="logo-calvados">
+        <img src="img/Logo_IUT_GON.png" alt="Logo IUT Grand Ouest Normandie" class="logo-iut">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="entreprise.html">Entreprise</a></li>
+        <li><a href="missions.html">Missions</a></li>
+        <li><a href="bilans.html">Bilans</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <span class="tag">Missions</span>
+      <h1>Réalisations phares de l'alternance</h1>
+      <p>Chaque mission détaille le contexte, les tâches, les preuves et mon analyse réflexive.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="grid projects-grid">
+        <article class="card info">
+          <h3>M01 · Déploiement et configuration de switches</h3>
+          <p>
+            Préparation, paramétrage et installation de switches PoE, migrations de VLAN et
+            remise en service des baies lors des chantiers réseau.
+          </p>
+          <a class="btn secondary" href="mission-switches.html">Voir la mission</a>
+        </article>
+        <article class="card info">
+          <h3>M02 · Bornes WiFi et gestion FortiManager</h3>
+          <p>
+            Installation, configuration et tests de bornes WiFi, suivi des versions et
+            résolution des problèmes de couverture ou de débit.
+          </p>
+          <a class="btn secondary" href="mission-wifi.html">Voir la mission</a>
+        </article>
+        <article class="card info">
+          <h3>M03 · Support réseau et incidents terrain</h3>
+          <p>
+            Interventions sur site pour traiter des incidents (fibre, DHCP, PC/tablettes),
+            avec diagnostic et restitution aux équipes éducatives.
+          </p>
+          <a class="btn secondary" href="mission-support.html">Voir la mission</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Noah Joli. Portfolio alternance Réseaux & Télécoms.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com" aria-label="LinkedIn">LinkedIn</a>
+      <a href="mailto:noah.joli@email.com" aria-label="Email">Email</a>
+    </div>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById('year');
+    yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

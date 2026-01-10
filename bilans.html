@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bilans - Portfolio Alternance Noah Joli</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero sub-hero">
+    <nav class="navbar">
+      <div class="logo">Noah Joli</div>
+      <div class="logos">
+        <img src="img/calvados_logo.png" alt="Logo Calvados" class="logo-calvados">
+        <img src="img/Logo_IUT_GON.png" alt="Logo IUT Grand Ouest Normandie" class="logo-iut">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="entreprise.html">Entreprise</a></li>
+        <li><a href="missions.html">Missions</a></li>
+        <li><a href="bilans.html">Bilans</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <span class="tag">Bilans</span>
+      <h1>Bilan par compétence</h1>
+      <p>Analyse croisée des compétences du référentiel Réseaux & Télécommunications, développées à l'IUT et en entreprise.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="grid skills-grid">
+        <article class="skill">
+          <h3>Administration réseaux</h3>
+          <p>Configuration LAN, segmentation VLAN, gestion PoE et remise en ordre des baies.</p>
+          <ul>
+            <li>IUT : travaux pratiques sur le routage et la segmentation.</li>
+            <li>Entreprise : préparation de plans de ports, configuration de switches et recâblage sur site (M01, M03).</li>
+          </ul>
+        </article>
+        <article class="skill">
+          <h3>Sécurité & résilience</h3>
+          <p>Séparation des flux, sécurisation des ports, suivi des incidents récurrents.</p>
+          <ul>
+            <li>IUT : projets sécurité (ACL, IDS, PKI).</li>
+            <li>Entreprise : ports dédiés/SSID séparés et contrôles de cohérence après intervention (M01, M02).</li>
+          </ul>
+        </article>
+        <article class="skill">
+          <h3>Supervision & automatisation</h3>
+          <p>Vérification de configuration, suivi de couverture WiFi, reporting d'incidents.</p>
+          <ul>
+            <li>IUT : monitoring basique et scripts Python.</li>
+            <li>Entreprise : tests de débit/latence, fiches de recette et suivi des anomalies (M02, M03).</li>
+          </ul>
+        </article>
+        <article class="skill">
+          <h3>Gestion de projet & communication</h3>
+          <p>Planification, documentation, transfert de compétences.</p>
+          <ul>
+            <li>IUT : méthodes agiles, rapports techniques.</li>
+            <li>Entreprise : comptes-rendus d'intervention, retours utilisateurs et coordination avec le prestataire.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Noah Joli. Portfolio alternance Réseaux & Télécoms.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com" aria-label="LinkedIn">LinkedIn</a>
+      <a href="mailto:noah.joli@email.com" aria-label="Email">Email</a>
+    </div>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById('year');
+    yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

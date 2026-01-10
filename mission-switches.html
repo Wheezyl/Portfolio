@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mission Switches - Portfolio Alternance Noah Joli</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero sub-hero">
+    <nav class="navbar">
+      <div class="logo">Noah Joli</div>
+      <div class="logos">
+        <img src="img/calvados_logo.png" alt="Logo Calvados" class="logo-calvados">
+        <img src="img/Logo_IUT_GON.png" alt="Logo IUT Grand Ouest Normandie" class="logo-iut">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="entreprise.html">Entreprise</a></li>
+        <li><a href="missions.html">Missions</a></li>
+        <li><a href="bilans.html">Bilans</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <span class="tag">Mission 01</span>
+      <h1>Déploiement et configuration de switches</h1>
+      <p>
+        Période principale : septembre → novembre. Objectif : fiabiliser les switches PoE,
+        préparer les migrations réseau et remettre en service les baies des collèges.
+      </p>
+      <a class="btn secondary" href="missions.html">Retour aux missions</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <article class="mission-card">
+        <header>
+          <div>
+            <p class="eyebrow">Migration LAN & PoE</p>
+            <h2>M01 · Configuration et installation de switches</h2>
+          </div>
+          <span class="badge">VLAN · PoE · Migration</span>
+        </header>
+        <div class="mission-body">
+          <div>
+            <h4>Contexte & objectifs</h4>
+            <p>
+              Le réseau des collèges évolue régulièrement (migrations de switches, ajout de PoE
+              pour les bornes et les salles). Les interventions visent à préparer les équipements
+              et à sécuriser la transition sans interruption.
+            </p>
+            <ul>
+              <li>Enjeux : éviter les coupures, garantir l'alimentation PoE, aligner les VLAN.</li>
+              <li>Acteurs : équipe numérique départementale, prestataires, référents de collège.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Tâches réalisées & évolution</h4>
+            <ul>
+              <li>Préparation en atelier de switches PoE (paramétrage de ports, VLAN imprimantes, WiFi, administration).</li>
+              <li>Installation sur site : remplacement de switches, recâblage des baies, tests de continuité.</li>
+              <li>Migration des ports pour aligner les nouveaux équipements (ex. Comlem, Verson, Deauville).</li>
+              <li>Réglages PoE sur les ports pour éviter la coupure des bornes (ex. Troarn).</li>
+            </ul>
+            <p class="muted">Autonomie : d'abord en binôme, puis capacité à préparer et installer un switch complet.</p>
+          </div>
+          <div>
+            <h4>Compétences & apprentissages</h4>
+            <p>Configuration LAN, gestion PoE, lecture de plans de baie et migration VLAN.</p>
+            <p class="muted">Apprentissages critiques : vérifier chaque port et anticiper l'impact sur les usages pédagogiques.</p>
+          </div>
+          <div>
+            <h4>Traces & preuves</h4>
+            <ul>
+              <li>Exports de configurations et plan de ports mis à jour.</li>
+              <li>Photos de baies réorganisées après installation.</li>
+              <li>Compte-rendus d'interventions avec tests de connectivité.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Analyse réflexive & autoévaluation</h4>
+            <p>
+              Les migrations de switches m'ont appris à être rigoureux sur la préparation des ports.
+              Niveau <strong>maîtrise solide</strong> sur la configuration de base et la mise en service.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Noah Joli. Portfolio alternance Réseaux & Télécoms.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com" aria-label="LinkedIn">LinkedIn</a>
+      <a href="mailto:noah.joli@email.com" aria-label="Email">Email</a>
+    </div>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById('year');
+    yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mission Support - Portfolio Alternance Noah Joli</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero sub-hero">
+    <nav class="navbar">
+      <div class="logo">Noah Joli</div>
+      <div class="logos">
+        <img src="img/calvados_logo.png" alt="Logo Calvados" class="logo-calvados">
+        <img src="img/Logo_IUT_GON.png" alt="Logo IUT Grand Ouest Normandie" class="logo-iut">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#accueil">Accueil</a></li>
+        <li><a href="entreprise.html">Entreprise</a></li>
+        <li><a href="missions.html">Missions</a></li>
+        <li><a href="bilans.html">Bilans</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <span class="tag">Mission 03</span>
+      <h1>Support réseau et incidents terrain</h1>
+      <p>
+        Période principale : novembre → décembre. Objectif : intervenir sur les incidents réseau
+        (fibre, DHCP, tablettes/PC) et garantir la continuité pédagogique dans les collèges.
+      </p>
+      <a class="btn secondary" href="missions.html">Retour aux missions</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <article class="mission-card">
+        <header>
+          <div>
+            <p class="eyebrow">Support & incidents</p>
+            <h2>M03 · Dépannage réseau et assistance utilisateurs</h2>
+          </div>
+          <span class="badge">DHCP · Fibre · PC/Tablettes</span>
+        </header>
+        <div class="mission-body">
+          <div>
+            <h4>Contexte & objectifs</h4>
+            <p>
+              Les collèges font face à des incidents variés : coupure fibre, problèmes DHCP,
+              tablettes WiFi instables ou postes enseignants à reconnecter. L'objectif est de
+              diagnostiquer rapidement et de remettre le service en place.
+            </p>
+            <ul>
+              <li>Enjeux : continuité pédagogique, limitation des interruptions de cours.</li>
+              <li>Acteurs : enseignants, services techniques, opérateurs (SFR), prestataires.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Tâches réalisées & évolution</h4>
+            <ul>
+              <li>Interventions sur incidents fibre (tests de branchements, escalade opérateur si besoin).</li>
+              <li>Analyse de problèmes DHCP, ajustement de paramètres et relance de services.</li>
+              <li>Remplacement de cartes WiFi, mises à jour drivers et validation du débit.</li>
+              <li>Support aux tablettes : tests en conditions réelles, suivi des tickets prestataires.</li>
+            </ul>
+            <p class="muted">Autonomie : prise en charge d'un incident jusqu'à la restitution au collège.</p>
+          </div>
+          <div>
+            <h4>Compétences & apprentissages</h4>
+            <p>Diagnostic d'incidents, communication avec les utilisateurs, suivi de tickets.</p>
+            <p class="muted">Apprentissages critiques : garder une trace claire des actions pour faciliter l'escalade.</p>
+          </div>
+          <div>
+            <h4>Traces & preuves</h4>
+            <ul>
+              <li>Tickets de support et comptes-rendus d'incidents.</li>
+              <li>Checklists de tests (WiFi, ping, DHCP) avant fermeture.</li>
+              <li>Retours d'utilisateurs confirmant le retour à la normale.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Analyse réflexive & autoévaluation</h4>
+            <p>
+              Les incidents terrain m'ont appris à rester méthodique sous pression.
+              Niveau <strong>autonome</strong> sur le diagnostic et la restitution.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Noah Joli. Portfolio alternance Réseaux & Télécoms.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com" aria-label="LinkedIn">LinkedIn</a>
+      <a href="mailto:noah.joli@email.com" aria-label="Email">Email</a>
+    </div>
+  </footer>
+
+  <script>
+    const yearSpan = document.getElementById('year');
+    yearSpan.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
