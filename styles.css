@@ -98,8 +98,10 @@
    flex-direction: column;
    gap: 1.5rem;
    z-index: 1;
- }
- 
+  max-width: 52rem;
+  width: 100%;
+}
+
 .hero-highlights {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -116,17 +118,17 @@
   width: 96px;
   height: 96px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
   position: relative;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.85);
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
 }
 
-.avatar::after {
-  content: '';
-  position: absolute;
-  inset: 8px;
-  border-radius: 50%;
-  background: url('img/noahjoli.jpg') center/cover;
-  border: 3px solid rgba(255, 255, 255, 0.85);
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .eyebrow {
@@ -150,6 +152,18 @@
    max-width: 32rem;
    color: var(--muted);
  }
+ 
+ .hero-wide {
+  grid-template-columns: 1fr;
+}
+
+.hero-wide .hero-illustration {
+  display: none;
+}
+
+.hero-wide .hero-content p {
+  max-width: 60rem;
+}
  
  .tag {
    align-self: flex-start;
